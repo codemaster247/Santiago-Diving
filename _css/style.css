@@ -1,36 +1,295 @@
+@font-face{
+    font-family: 'FonteLogo';
+    src: url(../_fonts/Poppins/Poppins-Medium.ttf);
+    
+}
+
+@font-face{
+    font-family: 'Fonte';
+    src: url(../_fonts/Poppins/Poppins-Regular.ttf)
+}
+
 *{
     margin: 0;
     padding: 0;
 }
+/*menu navegacao*/
+.navbar-brand{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'FonteLogo', sans-serif;
+    color: #fff !important;
 
+}
+.navbar-dark{
+    transition: 500ms ease; 
+    background-color: transparent !important;
+}
+.navbar-dark.scrolled{
+    background-color: #0275d8 !important;
+}
 
 .navbar{
-    padding-top: 20px !important;
+    padding-top: 15px !important;
     
 }
 .nav-item{
     margin-left: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     
 }
 .nav-link{
     color: #fff !important;
-    font-size: 12px !important;
+    font-size: 16px !important;
     padding: 0px 0px 5px 0px !important;
-    display: unset !important;
+   
+    font-family: 'Fonte', sans-serif;
+}
+.nav-link{
+    color: #fff;
 }
 
+.nav-link:hover {
+    text-decoration: underline;;
+}
+
+/*sliders das imagens*/
 .carousel-item {
     height: 65vh;
-    min-height: 400px;
+    min-height: 600px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+.carousel-caption{
+    bottom: 270px;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    font-family: 'Fonte' sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: 'Fonte' sans-serif;
+}
 
 .fa-bars{
     color: #fff;
     font-size: 30px !important;
+}
+/* timeline sobre nos*/
+.timeline{
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline:before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 550px;
+    width: 2px;
+    margin-left: -1.5px;
+    content: '';
+    background-color: #0275d8;
+}
+
+.timeline >li{
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 50px;
+
+}
+
+.timeline > li:after, .timeline > li:before{
+    display: table;
+    content: '';
+}
+
+.timeline > li:after{
+    clear:both;
+
+}
+
+.timeline > li .timeline-panel{
+    position: relative;
+    float: right;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.timeline > li .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.timeline > li .timeline-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.timeline > li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    left: 470px;
+    width: 150px;
+    height: 150px;
+    margin-left: 0;
+    text-align: center;
+    color: white;
+    border: 7px solid#e9ecef;
+    border-radius: 100%;
+    background-color: #0275d8;
+}
+  
+.timeline > li .timeline-image h4 {
+    font-size: 18px;
+    line-height: 16px;
+    margin-top: 35px;
+}
+  
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+  
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+  
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    right: auto;
+    left: -14px ;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+  
+.timeline > li:last-child {
+    margin-bottom: 0;
+}
+  
+.timeline .timeline-heading h4 {
+    margin-top: 0;
+    color: inherit;
+    margin-left: 520px;
+
+}
+  
+.timeline .timeline-heading h4.subheading {
+    text-transform: none;
+
+}
+  
+  .timeline .timeline-body > ul,
+  .timeline .timeline-body > p {
+    margin-bottom: 0;
+    margin-left: 530px;
+}  
+
+#head_first{
+    margin-left: 320px;
+}
+#head_second{
+    margin-left: -40px !important;
+}
+#head_third{
+    margin-left: 190px;
+}
+#parag{
+  
+  margin-left: -40px;
+}
+#esquerda{
+    margin-left: -70px !important;
+    color: grey;
+}
+
+/*servicos*/
+.btn.a{
+   color: #0275d8;
+   
+   
+}
+.btn{
+    font-family: 'Fonte' sans-serif;
+    font-weight: 500;
+    
+  }
+.page-section{
+    padding: 100px 0;
+}
+
+.page-section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+  
+.page-section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    
+}
+
+.service-heading{
+    margin: 15px 0;
+    text-transform: none;
+}
+
+/* equipa*/
+.team-member {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.page-section h2.section-page{
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.page-section h3.section-subpage{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    
+}
+
+.team-member img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+
+.team-member p {
+    margin-top: 0;
 }
